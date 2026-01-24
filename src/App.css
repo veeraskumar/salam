@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@theme {
+  --color-dark-purple: #412845;
+  --color-magenta-purple: #bb73c4;
+  --font-allura: "Allura", cursive;
+  --font-handlee: "Handlee", cursive;
+  --font-sacramento: "Sacramento", cursive;
+  --font-inter: "Inter", cursive;
+  --font-pacifico: "Pacifico", cursive;
+  --font-Playfair-Display: "Playfair Display", cursive;
+  --font-kalam: "kalam", cursive;
+}
+
+@layer base {
+  h3 {
+    font-family: var(--font-sacramento);
+    color: var(--color-magenta-purple);
+    font-size: clamp(30px, 4.5vw, 60px);
+  }
+  p {
+    color: var(--color-magenta-purple);
+    font-family: var(--font-handlee);
+    font-size: clamp(14px, 3vw, 20px);
+    line-height: 1.1;
+    margin-bottom: 10px;
+  }
+}
+
+@layer utilities {
+  .flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .icons-font {
+    font-family: var(--font-inter);
+    font-weight: 900;
+    font-style: italic;
+    color: #412845;
+  }
+  .nav-a {
+    color: var(--color-magenta-purple);
+    font-family: var(--font-inter);
+    font-size: clamp(14px, 3vw, 20px);
+    line-height: 1.1;
+    margin-bottom: 10px;
+  }
+}
