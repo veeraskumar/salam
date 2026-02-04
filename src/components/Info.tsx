@@ -74,7 +74,7 @@ export default function Info() {
     },
   ];
   return (
-    <div className={"not-sm:hidden lg:flex flex-col top-[35%] left-0 fixed"}>
+    <aside className={"not-sm:hidden lg:flex flex-col top-[35%] left-0 fixed"}>
       <ul>
         {links.map((list, i) => (
           <li
@@ -96,6 +96,6 @@ export default function Info() {
           </li>
         ))}
       </ul>
-    </div>
+    </aside>
   );
 }

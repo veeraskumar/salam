@@ -5,30 +5,30 @@ import Image11 from "../assets/image 11.png";
 import AboutMe from "../assets/AboutMe.png";
 import Tools from "../assets/Group 97.png";
 
-export default function About() {
-  const toolsVar: { img: string; p: string; style: string }[] = [
-    {
-      img: ImageRemoveBgPreview,
-      p: "Figma",
-      style: "hover:shadow-[#161719]",
-    },
-    {
-      img: Image8,
-      p: "Adobe Xd",
-      style: "hover:shadow-[#470137]",
-    },
-    {
-      img: Image11,
-      p: " Balsamiq",
-      style: "hover:shadow-red-500",
-    },
-    {
-      img: Image7,
-      p: "Miro",
-      style: "hover:shadow-[#ffcf2b]",
-    },
-  ];
+const toolsVar: { img: string; p: string; style: string }[] = [
+  {
+    img: ImageRemoveBgPreview,
+    p: "Figma",
+    style: "hover:shadow-[#161719]",
+  },
+  {
+    img: Image8,
+    p: "Adobe Xd",
+    style: "hover:shadow-[#470137]",
+  },
+  {
+    img: Image11,
+    p: " Balsamiq",
+    style: "hover:shadow-red-500",
+  },
+  {
+    img: Image7,
+    p: "Miro",
+    style: "hover:shadow-[#ffcf2b]",
+  },
+];
 
+export default function About() {
   return (
     <main
       className="w-full lg:h-dvh md:h-[700px] h-[500px] flex flex-col"
@@ -53,7 +53,7 @@ export default function About() {
           </p>
         </div>
       </div>
-      <div className="flex not-sm:flex-col-reverse w-full not-sm:h-screen h-1/2">
+      <div className="flex not-sm:flex-col-reverse w-full not-sm:h-fit h-1/2">
         <div className="md:w-1/2 w-full h-full m-auto grid grid-cols-2 justify-items-center items-center">
           {toolsVar.map(({ img, p, style }, i) => (
             <div

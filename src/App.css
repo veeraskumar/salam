@@ -27,6 +27,13 @@
   }
 }
 
+@layer components {
+  .me {
+    @apply text-center font-allura font-medium text-magenta-purple;
+    font-size: clamp(30px, 4.5vw, 60px);
+  }
+}
+
 @layer utilities {
   .flex-center {
     display: flex;
